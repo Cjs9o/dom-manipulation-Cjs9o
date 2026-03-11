@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <title>Lista de Tareas</title>
   </head>
   <body>
-    <h1>Mi TODO list</h1>
+    <main class="container">
+      <h1>Mi lista de tareas</h1>
+      <section class="input-group">
+        <input type="text" id="taskInput" placeholder="Escribe una nueva tarea..." aria-label="Nueva tarea" />
+        <button id="addTaskBtn">Agregar</button>
+      </section>
+
+      <section class="list-container">
+        <ul id="taskList"></ul>
+      </section>
+    </main>
     <script src="scripts/script.js"></script>
   </body>
 </html>
